@@ -11,7 +11,9 @@ body {
   font-size: 30px;
   color: red;
 }
-
+audio{
+  display: none;
+}
 .container {
   display: flex;
   justify-content: center;
