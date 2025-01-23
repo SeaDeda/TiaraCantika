@@ -18,9 +18,8 @@
         </div>
         <input type="text" class="search-bar" placeholder="Search...">
     </div>
-    <audio id="myAudio" autoplay loop>
+    <audio autoplay>
         <source src="menawan.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
     </audio>
     <!-- Video Section -->
     <div class="video-text-container">
@@ -28,7 +27,6 @@
         <div class="video-container">
             <video width="600" height="500" autoplay loop muted>
                 <source src="2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
             </video>
         </div>
         <!-- Text Section -->
@@ -77,10 +75,5 @@
     <div class="footer">
         <p>&copy; 2023 IDLIX. All rights reserved.</p>
     </div>
-    <script>
-        var audio = document.getElementById("myAudio");
-        audio.style.display = "none"; // Hide the audio element
-        audio.play();
-    </script>
 </body>
 </html>
