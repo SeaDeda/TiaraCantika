@@ -10,7 +10,7 @@
     <div class="header">
         <div class="logo">IDLIX</div>
         <div class="nav">
-            <a href="#">Home</a>
+            <a id="homeButton" href="#">Home</a>
             <a href="#">Movies</a>
             <a href="#">TV Series</a>
             <a href="#">Genres</a>
@@ -18,7 +18,7 @@
         </div>
         <input type="text" class="search-bar" placeholder="Search...">
     </div>
-    <audio autoplay loop>
+    <audio id="audioPlayer">
         <source src="menawan.mp3" type="audio/mp3">
     </audio>
     <!-- Video Section -->
@@ -75,5 +75,16 @@
     <div class="footer">
         <p>&copy; 2023 IDLIX. All rights reserved.</p>
     </div>
+    <script>
+        // Ambil elemen tombol dan audio
+        var homeButton = document.getElementById("homeButton");
+        var audioPlayer = document.getElementById("audioPlayer");
+
+        // Menambahkan event listener pada tombol
+        homeButton.addEventListener("click", function() {
+            // Mainkan audio ketika tombol di-klik
+            audioPlayer.play();
+        });
+    </script>
 </body>
 </html>
